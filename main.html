@@ -600,13 +600,27 @@
             <div>
                 <div class="name-phone-quantity-of-order-now">
                     <label class="label-of-order-now" for="phone-no">Your Phone Number</label>
-                    <input class="input-of-order-now padding-for-responsive-design" id="phone-no" type="number"
+                    <input class="input-of-order-now padding-for-responsive-design" id="phone-no" type="tel"
                         placeholder="Enter Your Phone Number">
                 </div>
 
                 <div>
                     <label class="label-of-order-now" for="food-name">Your Order</label>
-                    <input class="input-of-order-now" id="food-name" type="text" placeholder="Enter Food Name">
+                    <select name="food-name" id="food-name" class="input-of-order-now">
+                        <option value="" disabled selected>Select Food Item</option>
+                        <option value="Nuggets">Nuggets</option>
+                        <option value="Fried Chicken">Fried Chicken</option>
+                        <option value="Zinger Broast">Zinger Broast</option>
+                        <option value="Margherita Pizza">Margherita Pizza</option>
+                        <option value="The Big Mac">The Big Mac</option>
+                        <option value="Aloo Paratha">Aloo Paratha</option>
+                        <option value="Fettuccine Alfredo">Fettuccine Alfredo</option>
+                        <option value="Black Forest Cake">Black Forest Cake</option>
+                        <option value="Tropicana Orange Juice">Tropicana Orange Juice</option>
+                        <option value="FrostFusion">FrostFusion</option>
+                        <option value="Vanilla Bean">Vanilla Bean</option>
+                        <option value="Red Velvet Cupcake">Red Velvet Cupcake</option>
+                    </select>
                 </div>
             </div>
 
@@ -619,7 +633,13 @@
 
                 <div>
                     <label class="label-of-order-now" for="additional-beverage">Additional Food/Beverages</label>
-                    <input class="input-of-order-now" id="additional-beverage" type="text" placeholder="Extra Beverage">
+                    <select name="additional-beverage" id="additional-beverage" class="input-of-order-now">
+                        <option value="" disabled selected>Select Beverage</option>
+                        <option value="Pepsi">Pepsi</option>
+                        <option value="Seven Up">Seven Up</option>
+                        <option value="Mountain Dew">Mountain Dew</option>
+                        <option value="Sprite">Sprite</option>
+                    </select>
                 </div>
             </div>
 
