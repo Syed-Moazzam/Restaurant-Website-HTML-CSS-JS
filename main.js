@@ -1,5 +1,5 @@
 let Loader = document.getElementById("loading");
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
     Loader.style.display = "none";
 })
 
@@ -22,12 +22,10 @@ const orderNow = () => {
     let addBeverage = document.getElementById("additional-beverage").value;
     let resAddress = document.getElementById("res-address").value;
 
-    if (name === "" || email === "" || phone === "" || foodName === "" || quantity === "" || addBeverage === "" || resAddress === "")
-    {
+    if (name === "" || email === "" || phone === "" || foodName === "" || quantity === "" || addBeverage === "" || resAddress === "") {
         swal("Order Not Placed!", "You Did Not Give The Required Information!", "error");
     }
-    else
-    {
+    else {
         swal("Success!", "Your Order Has Been Placed!", "success");
         document.getElementById("name").value = "";
         document.getElementById("emailAddress").value = "";
@@ -38,3 +36,6 @@ const orderNow = () => {
         document.getElementById("res-address").value = "";
     }
 }
+
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year-for-footer').innerHTML = currentYear;
